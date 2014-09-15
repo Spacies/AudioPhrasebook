@@ -23,8 +23,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GeneralMenuActivity"
-            android:label="@string/title_activity_general_menu" >
+            android:name=".CategoryMenuActivity"
+            android:label="@string/title_activity_category_menu" >
         </activity>
     </application>
 

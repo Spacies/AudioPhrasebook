@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class GeneralMenuActivity extends ActionBarActivity {
+public class CategoryMenuActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_general_menu);
+		setContentView(R.layout.activity_category_menu);
 	}
 
 	@Override

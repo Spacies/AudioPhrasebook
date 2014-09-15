@@ -4,6 +4,12 @@
     <string name="app_name">AudioPhrasebook</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_general_menu">GeneralMenuActivity</string>
-
+    <string name="title_activity_category_menu">CategoryMenuActivity</string>
+	<string name="greetings_menu">Greetings</string>
+	<string name="directions_menu">Directions</string>
+	<string name="diningout_menu">Dining Out</string>
+	<string name="shopping_menu">Shopping</string>
+	<string name="back_menu">Back</string>
+	<string name="mainmenu_menu">Main Menu</string>
+	
 </resources>
