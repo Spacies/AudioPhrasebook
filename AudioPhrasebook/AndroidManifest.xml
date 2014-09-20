@@ -26,6 +26,26 @@
             android:name=".CategoryMenuActivity"
             android:label="@string/title_activity_category_menu" >
         </activity>
+        <activity
+            android:name=".GreetingPhrasesActivity"
+            android:label="@string/title_activity_greeting_phrases" >
+        </activity>
+        <activity
+            android:name=".DirectionPhrasesActivity"
+            android:label="@string/title_activity_direction_phrases" >
+        </activity>
+        <activity
+            android:name=".DiningoutPhrasesActivity"
+            android:label="@string/title_activity_diningout_phrases" >
+        </activity>
+        <activity
+            android:name=".ShoppingPhrasesActivity"
+            android:label="@string/title_activity_shopping_phrases" >
+        </activity>
+        <activity
+            android:name=".OptionsMenuActivity"
+            android:label="@string/title_activity_options_menu" >
+        </activity>
     </application>
 
 </manifest>
