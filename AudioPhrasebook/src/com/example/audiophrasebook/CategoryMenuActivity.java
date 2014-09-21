@@ -1,9 +1,11 @@
 package com.example.audiophrasebook;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class CategoryMenuActivity extends ActionBarActivity {
 
@@ -31,4 +33,31 @@ public class CategoryMenuActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void transitionGreeting(View v)
+	{
+		Intent intent = new Intent(this, GreetingPhrasesActivity.class);
+		startActivity(intent);
+	}
+	
+	public void transitionDiningout(View v)
+	{
+		Intent intent = new Intent(this, DiningoutPhrasesActivity.class);
+		startActivity(intent);
+	}
+	
+	public void transitionDirection(View v)
+	{
+		Intent intent = new Intent(this, DirectionPhrasesActivity.class);
+		startActivity(intent);
+	}
+	
+	public void transitionShopping(View v)
+	{
+		Intent intent = new Intent(this, ShoppingPhrasesActivity.class);
+		startActivity(intent);
+	}
+	
+	
+	
 }

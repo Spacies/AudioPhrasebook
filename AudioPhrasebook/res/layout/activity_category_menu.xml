@@ -18,11 +18,13 @@
         <Button android:id="@+id/button1" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/greetings_menu"/>
+        	android:text="@string/greetings_menu"
+        	android:onClick="transitionGreeting"/>
         <Button android:id="@+id/button2" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp"  
-        	android:text="@string/directions_menu"/>
+        	android:text="@string/directions_menu"
+        	android:onClick="transitionDirection"/>
     </LinearLayout>
     
     <LinearLayout android:layout_width="match_parent" 
@@ -31,11 +33,13 @@
         <Button android:id="@+id/button3" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp"  
-        	android:text="@string/diningout_menu"/>
+        	android:text="@string/diningout_menu"
+        	android:onClick="transitionDiningout"/>
         <Button android:id="@+id/button4" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/shopping_menu"/>
+        	android:text="@string/shopping_menu"
+        	android:onClick="transitionShopping"/>
     </LinearLayout>
     
     <LinearLayout android:layout_width="match_parent" 
