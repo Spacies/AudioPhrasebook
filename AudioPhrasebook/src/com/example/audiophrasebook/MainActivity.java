@@ -39,4 +39,17 @@ public class MainActivity extends ActionBarActivity {
 		Intent intent = new Intent(this, CategoryMenuActivity.class);
 		startActivity(intent);
 	}
+	
+	public void transitionOptionsMenu(View v)
+	{
+		Intent intent = new Intent(this, OptionsMenuActivity.class);
+		startActivity(intent);
+	}
+	
+	public void transitionExitApplication(View arg0)
+	{
+		android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
+	}
+	
 }
