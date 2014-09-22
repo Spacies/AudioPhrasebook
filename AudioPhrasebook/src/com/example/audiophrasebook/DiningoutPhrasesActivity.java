@@ -1,9 +1,11 @@
 package com.example.audiophrasebook;
 
 import android.support.v7.app.ActionBarActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class DiningoutPhrasesActivity extends ActionBarActivity {
 
@@ -30,5 +32,38 @@ public class DiningoutPhrasesActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void sayHello(View v)
+	{
+		MediaPlayer mp;
+		String buttonNum = (String) v.getTag();
+		switch (buttonNum)
+		{
+		case "1":
+			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			  mp.start();
+			  break;
+		case "2":
+			mp = MediaPlayer.create(this, R.raw.adios);  
+			  mp.start();
+			  break;
+		case "3":
+			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			  mp.start();
+			  break;
+		case "4":
+			mp = MediaPlayer.create(this, R.raw.adios);  
+			  mp.start();
+			  break;
+		case "5":
+			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			  mp.start();
+			  break;
+		case "6":
+			mp = MediaPlayer.create(this, R.raw.adios);  
+			  mp.start();
+			  break;
+		}
 	}
 }

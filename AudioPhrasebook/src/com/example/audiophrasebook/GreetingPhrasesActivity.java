@@ -44,11 +44,30 @@ public class GreetingPhrasesActivity extends ActionBarActivity {
 			mp = MediaPlayer.create(this, R.raw.alrighty);  
 			  mp.start();
 			  break;
-		case "7":
+		case "2":
 			mp = MediaPlayer.create(this, R.raw.adios);  
 			  mp.start();
 			  break;
+		case "3":
+			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			  mp.start();
+			  break;
+		case "4":
+			mp = MediaPlayer.create(this, R.raw.adios);  
+			  mp.start();
+			  break;
+		case "5":
+			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			  mp.start();
+			  break;
+		case "6":
+			mp = MediaPlayer.create(this, R.raw.adios);  
+			  mp.start();
+			  break;
+		case "7":
+			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			  mp.start();
+			  break;
 		}
-		
 	}
 }
