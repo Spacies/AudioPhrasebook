@@ -1,14 +1,19 @@
 package com.example.audiophrasebook;
 
-import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 public class ShoppingPhrasesActivity extends ActionBarActivity {
+
+	public void goBack(View v)
+	{
+		this.finish();
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,7 @@ public class ShoppingPhrasesActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.shopping_phrases, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -42,31 +47,26 @@ public class ShoppingPhrasesActivity extends ActionBarActivity {
 		switch (buttonNum)
 		{
 		case "1":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_howmuchdoesthiscost);  
 			  mp.start();
 			  break;
 		case "2":
-			mp = MediaPlayer.create(this, R.raw.adios);  
+			mp = MediaPlayer.create(this, R.raw.eng_idliketotrythison);  
 			  mp.start();
 			  break;
 		case "3":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_doyouhavethisshirtingreen);  
 			  mp.start();
 			  break;
 		case "4":
-			mp = MediaPlayer.create(this, R.raw.adios);  
+			mp = MediaPlayer.create(this, R.raw.eng_whatsizeareyou);  
 			  mp.start();
 			  break;
 		case "5":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_imsizelarge);  
 			  mp.start();
 			  break;
 		}
-	}
-	
-	public void goBack(View v)
-	{
-		this.finish();
 	}
 	
 	/**

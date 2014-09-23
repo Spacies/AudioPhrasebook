@@ -1,14 +1,19 @@
 package com.example.audiophrasebook;
 
-import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 public class GreetingPhrasesActivity extends ActionBarActivity {
+
+	public void goBack(View v)
+	{
+		this.finish();
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,7 @@ public class GreetingPhrasesActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.greeting_phrases, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -46,35 +51,30 @@ public class GreetingPhrasesActivity extends ActionBarActivity {
 			  mp.start();
 			  break;
 		case "2":
-			mp = MediaPlayer.create(this, R.raw.adios);  
+			mp = MediaPlayer.create(this, R.raw.eng_howareyou);  
 			  mp.start();
 			  break;
 		case "3":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_imfinethankyou);  
 			  mp.start();
 			  break;
 		case "4":
-			mp = MediaPlayer.create(this, R.raw.adios);  
+			mp = MediaPlayer.create(this, R.raw.eng_whatsyourname);  
 			  mp.start();
 			  break;
 		case "5":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_mynameismrsmith);  
 			  mp.start();
 			  break;
 		case "6":
-			mp = MediaPlayer.create(this, R.raw.adios);  
+			mp = MediaPlayer.create(this, R.raw.eng_itsnicetomeetyou);  
 			  mp.start();
 			  break;
 		case "7":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_goodbye);  
 			  mp.start();
 			  break;
 		}
-	}
-	
-	public void goBack(View v)
-	{
-		this.finish();
 	}
 	
 	/**

@@ -1221,9 +1221,29 @@ containing a value of this type.
         public static final int shopping_phrases=0x7f0d0006;
     }
     public static final class raw {
-        public static final int adios=0x7f050000;
-        public static final int alrighty=0x7f050001;
-        public static final int eng_hello=0x7f050002;
+        public static final int eng_canihavethemenuplease=0x7f050000;
+        public static final int eng_checkplease=0x7f050001;
+        public static final int eng_doyouhavethisshirtingreen=0x7f050002;
+        public static final int eng_goodbye=0x7f050003;
+        public static final int eng_gostraight=0x7f050004;
+        public static final int eng_hello=0x7f050005;
+        public static final int eng_howareyou=0x7f050006;
+        public static final int eng_howdoigettothemuseum=0x7f050007;
+        public static final int eng_howmuchdoesthiscost=0x7f050008;
+        public static final int eng_idlikethesteak=0x7f050009;
+        public static final int eng_idliketotrythison=0x7f05000a;
+        public static final int eng_imfinethankyou=0x7f05000b;
+        public static final int eng_imsizelarge=0x7f05000c;
+        public static final int eng_itsnicetomeetyou=0x7f05000d;
+        public static final int eng_iwouldlikeaglassofwine=0x7f05000e;
+        public static final int eng_mynameismrsmith=0x7f05000f;
+        public static final int eng_turnleft=0x7f050010;
+        public static final int eng_turnright=0x7f050011;
+        public static final int eng_whatcanigetyou=0x7f050012;
+        public static final int eng_whatsizeareyou=0x7f050013;
+        public static final int eng_whatsyourname=0x7f050014;
+        public static final int eng_whatwouldyouliketodrink=0x7f050015;
+        public static final int eng_whereisthebusstop=0x7f050016;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

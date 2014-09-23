@@ -1,11 +1,9 @@
 package com.example.audiophrasebook.tests;
 
-import com.example.audiophrasebook.MainActivity;
-
 import android.content.Intent;
 import android.test.ActivityUnitTestCase;
-import android.test.suitebuilder.annotation.MediumTest;
-import android.widget.Button;
+
+import com.example.audiophrasebook.MainActivity;
 
 public class MainActivityTest extends ActivityUnitTestCase<MainActivity> {
 	private Intent mMainIntent;

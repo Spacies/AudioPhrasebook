@@ -1,14 +1,19 @@
 package com.example.audiophrasebook;
 
-import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 public class CategoryMenuActivity extends ActionBarActivity {
 	
+	public void goBack(View v)
+	{
+		this.finish();
+	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,7 +26,7 @@ public class CategoryMenuActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.general_menu, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -32,12 +37,6 @@ public class CategoryMenuActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
-	
-	public void transitionGreeting(View v)
-	{
-		Intent intent = new Intent(this, GreetingPhrasesActivity.class);
-		startActivity(intent);
 	}
 	
 	public void transitionDiningout(View v)
@@ -52,14 +51,15 @@ public class CategoryMenuActivity extends ActionBarActivity {
 		startActivity(intent);
 	}
 	
+	public void transitionGreeting(View v)
+	{
+		Intent intent = new Intent(this, GreetingPhrasesActivity.class);
+		startActivity(intent);
+	}
+	
 	public void transitionShopping(View v)
 	{
 		Intent intent = new Intent(this, ShoppingPhrasesActivity.class);
 		startActivity(intent);
-	}
-	
-	public void goBack(View v)
-	{
-		this.finish();
 	}
 }

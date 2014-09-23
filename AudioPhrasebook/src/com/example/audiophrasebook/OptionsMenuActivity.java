@@ -1,11 +1,16 @@
 package com.example.audiophrasebook;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class OptionsMenuActivity extends ActionBarActivity {
+
+	public void goBack()
+	{
+		this.finish();
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +24,7 @@ public class OptionsMenuActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.options_menu, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -30,10 +35,5 @@ public class OptionsMenuActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
-	
-	public void goBack()
-	{
-		this.finish();
 	}
 }
