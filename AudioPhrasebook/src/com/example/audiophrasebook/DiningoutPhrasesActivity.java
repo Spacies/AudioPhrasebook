@@ -1,14 +1,14 @@
 package com.example.audiophrasebook;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class DiningoutPhrasesActivity extends ActionBarActivity {
+public class DiningoutPhrasesActivity extends Activity {
 
 	public void goBack(View v)
 	{

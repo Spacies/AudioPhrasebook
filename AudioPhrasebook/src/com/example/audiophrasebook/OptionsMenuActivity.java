@@ -1,11 +1,11 @@
 package com.example.audiophrasebook;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class OptionsMenuActivity extends ActionBarActivity {
+public class OptionsMenuActivity extends Activity {
 
 	public void goBack()
 	{
