@@ -1,5 +1,6 @@
 package com.example.audiophrasebook;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class GreetingPhrasesActivity extends ActionBarActivity {
+public class GreetingPhrasesActivity extends Activity {
 
 	public void goBack(View v)
 	{
