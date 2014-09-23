@@ -42,7 +42,7 @@ public class GreetingPhrasesActivity extends ActionBarActivity {
 		switch (buttonNum)
 		{
 		case "1":
-			mp = MediaPlayer.create(this, R.raw.alrighty);  
+			mp = MediaPlayer.create(this, R.raw.eng_hello);  
 			  mp.start();
 			  break;
 		case "2":
