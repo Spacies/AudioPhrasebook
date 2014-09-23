@@ -43,9 +43,9 @@
     <string name="title_activity_shopping_phrases">ShoppingPhrasesActivity</string>
     <string name="shopping_phrase_one">How much does this cost?</string>
     <string name="shopping_phrase_two">I\'d like to try this on.</string>
-    <string name="diningout_phrase_three">Do you have this shirt in green?</string>
-    <string name="diningout_phrase_four">What size are you?</string>
-    <string name="diningout_phrase_five">I\'m size large.</string>
+    <string name="shopping_phrase_three">Do you have this shirt in green?</string>
+    <string name="shopping_phrase_four">What size are you?</string>
+    <string name="shopping_phrase_five">I\'m size large.</string>
     <string name="title_activity_options_menu">OptionsMenuActivity</string>
 
 </resources>

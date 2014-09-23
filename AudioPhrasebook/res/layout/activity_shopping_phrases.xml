@@ -35,7 +35,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="sayHello"
         android:tag="3"
-        android:text="@string/greeting_phrase_one" />
+        android:text="@string/shopping_phrase_three" />
 
     <Button
         android:id="@+id/button4"
@@ -44,7 +44,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="sayHello"
         android:tag="4"
-        android:text="@string/greeting_phrase_one" />
+        android:text="@string/shopping_phrase_four" />
 
     <Button
         android:id="@+id/button5"
@@ -53,6 +53,6 @@
         android:layout_gravity="center_horizontal"
         android:onClick="sayHello"
         android:tag="5"
-        android:text="@string/greeting_phrase_one" />
+        android:text="@string/shopping_phrase_five" />
     
 </LinearLayout>
