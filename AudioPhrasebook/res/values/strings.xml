@@ -46,6 +46,7 @@
     <string name="shopping_phrase_three">Do you have this shirt in green?</string>
     <string name="shopping_phrase_four">What size are you?</string>
     <string name="shopping_phrase_five">I\'m size large.</string>
+    
     <string name="title_activity_options_menu">OptionsMenuActivity</string>
 
 </resources>

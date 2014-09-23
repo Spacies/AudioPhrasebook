@@ -48,11 +48,13 @@
         <Button android:id="@+id/button5" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/back_menu"/>
+        	android:text="@string/back_menu"
+        	android:onClick="goBack"/>
         <Button android:id="@+id/button6" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/mainmenu_menu"/>
+        	android:text="@string/mainmenu_menu"
+        	android:onClick="goBack"/>
     </LinearLayout>
 
 </LinearLayout>

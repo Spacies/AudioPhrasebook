@@ -15,7 +15,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="sayHello"
+        android:onClick="playPhrase"
         android:tag="1"
         android:text="@string/diningout_phrase_one" />
 
@@ -24,7 +24,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="sayHello"
+        android:onClick="playPhrase"
         android:tag="2"
         android:text="@string/diningout_phrase_two" />
 
@@ -33,7 +33,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="sayHello"
+        android:onClick="playPhrase"
         android:tag="3"
         android:text="@string/diningout_phrase_three" />
 
@@ -42,7 +42,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="sayHello"
+        android:onClick="playPhrase"
         android:tag="4"
         android:text="@string/diningout_phrase_four" />
 
@@ -51,17 +51,33 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="sayHello"
+        android:onClick="playPhrase"
         android:tag="5"
         android:text="@string/diningout_phrase_five" />
-    
+
     <Button
         android:id="@+id/button6"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="sayHello"
+        android:onClick="playPhrase"
         android:tag="6"
         android:text="@string/diningout_phrase_six" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goBack"
+        android:text="@string/back_menu" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="transitionMainMenu"
+        android:text="@string/mainmenu_menu" />
 
 </LinearLayout>

@@ -31,4 +31,9 @@ public class OptionsMenuActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void goBack()
+	{
+		this.finish();
+	}
 }

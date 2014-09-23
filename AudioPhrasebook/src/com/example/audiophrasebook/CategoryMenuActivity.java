@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class CategoryMenuActivity extends ActionBarActivity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,6 +58,8 @@ public class CategoryMenuActivity extends ActionBarActivity {
 		startActivity(intent);
 	}
 	
-	
-	
+	public void goBack(View v)
+	{
+		this.finish();
+	}
 }

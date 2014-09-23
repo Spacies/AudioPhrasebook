@@ -1,6 +1,7 @@
 package com.example.audiophrasebook;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
@@ -34,7 +35,7 @@ public class DirectionPhrasesActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void sayHello(View v)
+	public void playPhrase(View v)
 	{
 		MediaPlayer mp;
 		String buttonNum = (String) v.getTag();
@@ -61,5 +62,21 @@ public class DirectionPhrasesActivity extends ActionBarActivity {
 			  mp.start();
 			  break;
 		}
+	}
+	
+	public void goBack(View v)
+	{
+		this.finish();
+	}
+	
+	/**
+	 * Starts new main activity and pops all other activities from the stack.
+	 * @param v
+	 */
+	public void transitionMainMenu(View v)
+	{
+		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		startActivity(intent);
 	}
 }
