@@ -53,3 +53,9 @@ public class MainActivity extends Activity {
 	}
 	
 }
+
+
+/**
+ 	Testing commit to github with new IDE.
+ * 
+ */
