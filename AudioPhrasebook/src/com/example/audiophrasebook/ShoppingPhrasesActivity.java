@@ -47,23 +47,23 @@ public class ShoppingPhrasesActivity extends Activity {
 		switch (buttonNum)
 		{
 		case "1":
-			mp = MediaPlayer.create(this, R.raw.eng_howmuchdoesthiscost);  
+			mp = MediaPlayer.create(this, R.raw.kor_howmuchdoesthiscost);  
 			  mp.start();
 			  break;
 		case "2":
-			mp = MediaPlayer.create(this, R.raw.eng_idliketotrythison);  
+			mp = MediaPlayer.create(this, R.raw.kor_idliketotrythison);  
 			  mp.start();
 			  break;
 		case "3":
-			mp = MediaPlayer.create(this, R.raw.eng_doyouhavethisshirtingreen);  
+			mp = MediaPlayer.create(this, R.raw.kor_doyouhavethisshirtingreen);  
 			  mp.start();
 			  break;
 		case "4":
-			mp = MediaPlayer.create(this, R.raw.eng_whatsizeareyou);  
+			mp = MediaPlayer.create(this, R.raw.kor_whatsizeareyou);  
 			  mp.start();
 			  break;
 		case "5":
-			mp = MediaPlayer.create(this, R.raw.eng_imsizelarge);  
+			mp = MediaPlayer.create(this, R.raw.kor_imsizelarge);  
 			  mp.start();
 			  break;
 		}

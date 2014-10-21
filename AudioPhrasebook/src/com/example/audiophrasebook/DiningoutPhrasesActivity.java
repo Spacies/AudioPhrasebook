@@ -47,27 +47,27 @@ public class DiningoutPhrasesActivity extends Activity {
 		switch (buttonNum)
 		{
 		case "1":
-			mp = MediaPlayer.create(this, R.raw.eng_canihavethemenuplease);  
+			mp = MediaPlayer.create(this, R.raw.kor_canihavethemenuplease);  
 			  mp.start();
 			  break;
 		case "2":
-			mp = MediaPlayer.create(this, R.raw.eng_whatwouldyouliketodrink);  
+			mp = MediaPlayer.create(this, R.raw.kor_whatwouldyouliketodrink);  
 			  mp.start();
 			  break;
 		case "3":
-			mp = MediaPlayer.create(this, R.raw.eng_iwouldlikeaglassofwine);  
+			mp = MediaPlayer.create(this, R.raw.kor_iwouldlikeaglassofwine);  
 			  mp.start();
 			  break;
 		case "4":
-			mp = MediaPlayer.create(this, R.raw.eng_whatcanigetyou);  
+			mp = MediaPlayer.create(this, R.raw.kor_whatcanigetyou);  
 			  mp.start();
 			  break;
 		case "5":
-			mp = MediaPlayer.create(this, R.raw.eng_idlikethesteak);  
+			mp = MediaPlayer.create(this, R.raw.kor_idlikethesteak);  
 			  mp.start();
 			  break;
 		case "6":
-			mp = MediaPlayer.create(this, R.raw.eng_checkplease);  
+			mp = MediaPlayer.create(this, R.raw.kor_checkplease);  
 			  mp.start();
 			  break;
 		}

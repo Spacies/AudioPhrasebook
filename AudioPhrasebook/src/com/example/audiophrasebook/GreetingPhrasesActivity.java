@@ -47,31 +47,31 @@ public class GreetingPhrasesActivity extends Activity {
 		switch (buttonNum)
 		{
 		case "1":
-			mp = MediaPlayer.create(this, R.raw.eng_hello);  
+			mp = MediaPlayer.create(this, R.raw.kor_hello);  
 			  mp.start();
 			  break;
 		case "2":
-			mp = MediaPlayer.create(this, R.raw.eng_howareyou);  
+			mp = MediaPlayer.create(this, R.raw.kor_howareyou);  
 			  mp.start();
 			  break;
 		case "3":
-			mp = MediaPlayer.create(this, R.raw.eng_imfinethankyou);  
+			mp = MediaPlayer.create(this, R.raw.kor_imfinethankyou);  
 			  mp.start();
 			  break;
 		case "4":
-			mp = MediaPlayer.create(this, R.raw.eng_whatsyourname);  
+			mp = MediaPlayer.create(this, R.raw.kor_whatsyourname);  
 			  mp.start();
 			  break;
 		case "5":
-			mp = MediaPlayer.create(this, R.raw.eng_mynameismrsmith);  
+			mp = MediaPlayer.create(this, R.raw.kor_mynameismrsmith);  
 			  mp.start();
 			  break;
 		case "6":
-			mp = MediaPlayer.create(this, R.raw.eng_itsnicetomeetyou);  
+			mp = MediaPlayer.create(this, R.raw.kor_itsnicetomeetyou);  
 			  mp.start();
 			  break;
 		case "7":
-			mp = MediaPlayer.create(this, R.raw.eng_goodbye);  
+			mp = MediaPlayer.create(this, R.raw.kor_goodbye);  
 			  mp.start();
 			  break;
 		}

@@ -47,23 +47,23 @@ public class DirectionPhrasesActivity extends Activity {
 		switch (buttonNum)
 		{
 		case "1":
-			mp = MediaPlayer.create(this, R.raw.eng_whereisthebusstop);  
+			mp = MediaPlayer.create(this, R.raw.kor_whereisthebusstop);  
 			  mp.start();
 			  break;
 		case "2":
-			mp = MediaPlayer.create(this, R.raw.eng_howdoigettothemuseum);  
+			mp = MediaPlayer.create(this, R.raw.kor_howdoigettothemuseum);  
 			  mp.start();
 			  break;
 		case "3":
-			mp = MediaPlayer.create(this, R.raw.eng_gostraight);  
+			mp = MediaPlayer.create(this, R.raw.kor_gostraight);  
 			  mp.start();
 			  break;
 		case "4":
-			mp = MediaPlayer.create(this, R.raw.eng_turnright);  
+			mp = MediaPlayer.create(this, R.raw.kor_turnright);  
 			  mp.start();
 			  break;
 		case "5":
-			mp = MediaPlayer.create(this, R.raw.eng_turnleft);  
+			mp = MediaPlayer.create(this, R.raw.kor_turnleft);  
 			  mp.start();
 			  break;
 		}

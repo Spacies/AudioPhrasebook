@@ -1244,6 +1244,29 @@ containing a value of this type.
         public static final int eng_whatsyourname=0x7f050014;
         public static final int eng_whatwouldyouliketodrink=0x7f050015;
         public static final int eng_whereisthebusstop=0x7f050016;
+        public static final int kor_canihavethemenuplease=0x7f050017;
+        public static final int kor_checkplease=0x7f050018;
+        public static final int kor_doyouhavethisshirtingreen=0x7f050019;
+        public static final int kor_goodbye=0x7f05001a;
+        public static final int kor_gostraight=0x7f05001b;
+        public static final int kor_hello=0x7f05001c;
+        public static final int kor_howareyou=0x7f05001d;
+        public static final int kor_howdoigettothemuseum=0x7f05001e;
+        public static final int kor_howmuchdoesthiscost=0x7f05001f;
+        public static final int kor_idlikethesteak=0x7f050020;
+        public static final int kor_idliketotrythison=0x7f050021;
+        public static final int kor_imfinethankyou=0x7f050022;
+        public static final int kor_imsizelarge=0x7f050023;
+        public static final int kor_itsnicetomeetyou=0x7f050024;
+        public static final int kor_iwouldlikeaglassofwine=0x7f050025;
+        public static final int kor_mynameismrsmith=0x7f050026;
+        public static final int kor_turnleft=0x7f050027;
+        public static final int kor_turnright=0x7f050028;
+        public static final int kor_whatcanigetyou=0x7f050029;
+        public static final int kor_whatsizeareyou=0x7f05002a;
+        public static final int kor_whatsyourname=0x7f05002b;
+        public static final int kor_whatwouldyouliketodrink=0x7f05002c;
+        public static final int kor_whereisthebusstop=0x7f05002d;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
