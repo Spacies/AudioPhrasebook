@@ -1,5 +1,8 @@
 package com.example.audiophrasebook;
 
+import com.example.audiophrasebook.extras.Globals;
+import com.example.audiophrasebook.extras.Language;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -10,8 +13,7 @@ import android.view.View;
 
 public class DirectionPhrasesActivity extends Activity {
 
-	public void goBack(View v)
-	{
+	public void goBack(View v) {
 		this.finish();
 	}
 
@@ -27,7 +29,7 @@ public class DirectionPhrasesActivity extends Activity {
 		getMenuInflater().inflate(R.menu.direction_phrases, menu);
 		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -39,42 +41,65 @@ public class DirectionPhrasesActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void playPhrase(View v)
-	{
+
+	public void playPhrase(View v) {
 		MediaPlayer mp;
 		String buttonNum = (String) v.getTag();
-		switch (buttonNum)
-		{
-		case "1":
-			mp = MediaPlayer.create(this, R.raw.kor_whereisthebusstop);  
-			  mp.start();
-			  break;
-		case "2":
-			mp = MediaPlayer.create(this, R.raw.kor_howdoigettothemuseum);  
-			  mp.start();
-			  break;
-		case "3":
-			mp = MediaPlayer.create(this, R.raw.kor_gostraight);  
-			  mp.start();
-			  break;
-		case "4":
-			mp = MediaPlayer.create(this, R.raw.kor_turnright);  
-			  mp.start();
-			  break;
-		case "5":
-			mp = MediaPlayer.create(this, R.raw.kor_turnleft);  
-			  mp.start();
-			  break;
+		if (Globals.PHRASE == Language.ENGLISH) {
+			switch (buttonNum) {
+			case "1":
+				mp = MediaPlayer.create(this, R.raw.eng_whereisthebusstop);
+				mp.start();
+				break;
+			case "2":
+				mp = MediaPlayer.create(this, R.raw.eng_howdoigettothemuseum);
+				mp.start();
+				break;
+			case "3":
+				mp = MediaPlayer.create(this, R.raw.eng_gostraight);
+				mp.start();
+				break;
+			case "4":
+				mp = MediaPlayer.create(this, R.raw.eng_turnright);
+				mp.start();
+				break;
+			case "5":
+				mp = MediaPlayer.create(this, R.raw.eng_turnleft);
+				mp.start();
+				break;
+			}
+		} else if (Globals.PHRASE == Language.KOREAN) {
+			switch (buttonNum) {
+			case "1":
+				mp = MediaPlayer.create(this, R.raw.kor_whereisthebusstop);
+				mp.start();
+				break;
+			case "2":
+				mp = MediaPlayer.create(this, R.raw.kor_howdoigettothemuseum);
+				mp.start();
+				break;
+			case "3":
+				mp = MediaPlayer.create(this, R.raw.kor_gostraight);
+				mp.start();
+				break;
+			case "4":
+				mp = MediaPlayer.create(this, R.raw.kor_turnright);
+				mp.start();
+				break;
+			case "5":
+				mp = MediaPlayer.create(this, R.raw.kor_turnleft);
+				mp.start();
+				break;
+			}
 		}
 	}
-	
+
 	/**
 	 * Starts new main activity and pops all other activities from the stack.
+	 * 
 	 * @param v
 	 */
-	public void transitionMainMenu(View v)
-	{
+	public void transitionMainMenu(View v) {
 		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);

@@ -1,5 +1,8 @@
 package com.example.audiophrasebook;
 
+import com.example.audiophrasebook.extras.Globals;
+import com.example.audiophrasebook.extras.Language;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -44,6 +47,34 @@ public class ShoppingPhrasesActivity extends Activity {
 	{
 		MediaPlayer mp;
 		String buttonNum = (String) v.getTag();
+		if (Globals.PHRASE == Language.ENGLISH)
+		{
+		switch (buttonNum)
+		{
+		case "1":
+			mp = MediaPlayer.create(this, R.raw.eng_howmuchdoesthiscost);  
+			  mp.start();
+			  break;
+		case "2":
+			mp = MediaPlayer.create(this, R.raw.eng_idliketotrythison);  
+			  mp.start();
+			  break;
+		case "3":
+			mp = MediaPlayer.create(this, R.raw.eng_doyouhavethisshirtingreen);  
+			  mp.start();
+			  break;
+		case "4":
+			mp = MediaPlayer.create(this, R.raw.eng_whatsizeareyou);  
+			  mp.start();
+			  break;
+		case "5":
+			mp = MediaPlayer.create(this, R.raw.eng_imsizelarge);  
+			  mp.start();
+			  break;
+		}
+		}
+		else if (Globals.PHRASE == Language.KOREAN)
+		{
 		switch (buttonNum)
 		{
 		case "1":
@@ -66,6 +97,7 @@ public class ShoppingPhrasesActivity extends Activity {
 			mp = MediaPlayer.create(this, R.raw.kor_imsizelarge);  
 			  mp.start();
 			  break;
+		}
 		}
 	}
 	

@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends Activity {
+//	public PhraseLanguage language = PhraseLanguage.ENGLISH;
+//	private Globals globals;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +57,4 @@ public class MainActivity extends Activity {
 }
 
 
-/**
- 	Testing commit to github with new IDE.
- * 
- */
+
