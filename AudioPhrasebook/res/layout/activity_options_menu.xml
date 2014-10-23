@@ -60,25 +60,22 @@
 
     </LinearLayout>
     
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal" >
+    
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
             android:onClick="goBack"
             android:text="@string/back_menu" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:onClick="transitionMainMenu"
+            android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+ 	        android:onClick="transitionMainMenu"
             android:text="@string/mainmenu_menu" />
-    </LinearLayout>
+    
 
     
 
