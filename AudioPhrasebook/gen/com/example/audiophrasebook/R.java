@@ -858,10 +858,11 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f070002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f080003;
+        public static final int abc_search_url_text_holo=0x7f080004;
         public static final int abc_search_url_text_normal=0x7f080000;
         public static final int abc_search_url_text_pressed=0x7f080002;
         public static final int abc_search_url_text_selected=0x7f080001;
+        public static final int custom_theme_color=0x7f080003;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1425,6 +1426,7 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0c008c;
+        public static final int CustomTheme=0x7f0c008d;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0c0063;

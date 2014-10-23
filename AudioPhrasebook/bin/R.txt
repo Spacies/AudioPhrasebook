@@ -120,10 +120,11 @@ int bool abc_config_actionMenuItemAllCaps 0x7f070005
 int bool abc_config_allowActionMenuItemTextWithIcon 0x7f070004
 int bool abc_config_showMenuShortcutsWhenKeyboardPresent 0x7f070003
 int bool abc_split_action_bar_is_narrow 0x7f070002
-int color abc_search_url_text_holo 0x7f080003
+int color abc_search_url_text_holo 0x7f080004
 int color abc_search_url_text_normal 0x7f080000
 int color abc_search_url_text_pressed 0x7f080002
 int color abc_search_url_text_selected 0x7f080001
+int color custom_theme_color 0x7f080003
 int dimen abc_action_bar_default_height 0x7f090002
 int dimen abc_action_bar_icon_vertical_padding 0x7f090003
 int dimen abc_action_bar_progress_bar_size 0x7f09000a
@@ -495,6 +496,7 @@ int string title_activity_options_menu 0x7f0b0035
 int string title_activity_shopping_phrases 0x7f0b002f
 int style AppBaseTheme 0x7f0c008b
 int style AppTheme 0x7f0c008c
+int style CustomTheme 0x7f0c008d
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0c0063
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0c006d
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0c006f
