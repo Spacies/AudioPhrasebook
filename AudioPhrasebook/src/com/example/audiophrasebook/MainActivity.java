@@ -1,5 +1,6 @@
 package com.example.audiophrasebook;
 
+import com.example.audiophrasebook.extras.GPSValue;
 import com.example.audiophrasebook.extras.Globals;
 
 import android.app.Activity;
@@ -12,7 +13,10 @@ import android.view.View;
 public class MainActivity extends Activity {
 //	public PhraseLanguage language = PhraseLanguage.ENGLISH;
 //	private Globals globals;
-
+	GPSValue gps;
+	double theLatitude;
+	double theLongitude;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,6 +32,9 @@ public class MainActivity extends Activity {
 		default:
 			break;
 		}
+		gps.showSettingsAlert();
+		theLatitude = gps.getLatitude(); //ready for comparison to determine language
+		theLongitude = gps.getLongitude();
 	}
 
 	@Override
