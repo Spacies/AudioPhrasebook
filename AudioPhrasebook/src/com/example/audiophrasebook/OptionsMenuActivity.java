@@ -9,9 +9,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RadioButton;
 
 public class OptionsMenuActivity extends Activity {
 
+//	RadioButton r1 = (RadioButton) findViewById(R.id.radio_korean);
 //	RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
 //	radioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() 
 //    {
@@ -32,7 +34,18 @@ public class OptionsMenuActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_options_menu);
+		
+		switch (Globals.UI)
+		{
+		case ENGLISH:
+			setContentView(R.layout.activity_options_menu_eng);
+			break;
+		case KOREAN:
+			setContentView(R.layout.activity_options_menu_kor);
+			break;
+		default:
+			break;
+		}
 		
 		
 		
@@ -80,18 +93,63 @@ public class OptionsMenuActivity extends Activity {
 		startActivity(intent);
 	}
 	
-	public void setPhraseLanguage(View v)
+//	public void setPhraseLanguage(View v)
+//	{
+//		System.out.println("HELLO");
+//	}
+//	
+//	public void setEnglish(View v) {
+//		System.out.println("English");
+//		Globals.PHRASE = Language.ENGLISH;
+//    }
+//	public void setKorean(View v)
+//	{
+//		System.out.println("Korean");
+//		Globals.PHRASE = Language.KOREAN;
+//	}
+	
+	public void onRadioButtonClicked(View v)
 	{
-		System.out.println("HELLO");
+		// Is the button now checked?
+	    boolean checked = ((RadioButton) v).isChecked();
+	    
+	    // Check which radio button was clicked
+	    switch(v.getId()) {
+		    case R.id.radio_ui_eng:
+	            if (checked)
+	            {
+	            	System.out.println("UI English");
+	            	Globals.UI = Language.ENGLISH;
+	            	//((RadioButton) v).setVisibility(View.VISIBLE);
+	            }
+	            break;
+	        case R.id.radio_ui_kor:
+	            if (checked)
+	            {
+	            	System.out.println("UI Korean");
+	        		Globals.UI = Language.KOREAN;
+	        		((RadioButton) v).setChecked(true);;
+	            }
+	            break;
+	    	case R.id.radio_phrase_eng:
+	            if (checked)
+	            {
+	            	System.out.println("Phrase English");
+	            	Globals.PHRASE = Language.ENGLISH;
+	            	//((RadioButton) v).setVisibility(View.VISIBLE);
+	            }
+	            break;
+	        case R.id.radio_phrase_kor:
+	            if (checked)
+	            {
+	            	System.out.println("Phrase Korean");
+	        		Globals.PHRASE = Language.KOREAN;
+	        		((RadioButton) v).setChecked(true);;
+	            }
+	            break;
+	    }
+	
 	}
 	
-	public void setEnglish(View v) {
-		System.out.println("English");
-		Globals.PHRASE = Language.ENGLISH;
-    }
-	public void setKorean(View v)
-	{
-		System.out.println("Korean");
-		Globals.PHRASE = Language.KOREAN;
-	}
+	
 }

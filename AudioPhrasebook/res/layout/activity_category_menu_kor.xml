@@ -18,12 +18,12 @@
         <Button android:id="@+id/button1" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/greetings_menu"
+        	android:text="@string/greetings_menu_kor"
         	android:onClick="transitionGreeting"/>
         <Button android:id="@+id/button2" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp"  
-        	android:text="@string/directions_menu"
+        	android:text="@string/directions_menu_kor"
         	android:onClick="transitionDirection"/>
     </LinearLayout>
     
@@ -33,12 +33,12 @@
         <Button android:id="@+id/button3" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp"  
-        	android:text="@string/diningout_menu"
+        	android:text="@string/diningout_menu_kor"
         	android:onClick="transitionDiningout"/>
         <Button android:id="@+id/button4" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/shopping_menu"
+        	android:text="@string/shopping_menu_kor"
         	android:onClick="transitionShopping"/>
     </LinearLayout>
     
@@ -48,12 +48,12 @@
         <Button android:id="@+id/button5" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/back_menu"
+        	android:text="@string/back_menu_kor"
         	android:onClick="goBack"/>
         <Button android:id="@+id/button6" 
         	android:layout_width="125dp" 
         	android:layout_height="125dp" 
-        	android:text="@string/mainmenu_menu"
+        	android:text="@string/main_menu_kor"
         	android:onClick="goBack"/>
     </LinearLayout>
 

@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.audiophrasebook.OptionsMenuActivity" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:text="Select Interface Language" />
+
+        <!-- <Spinner -->
+        <!-- android:id="@+id/spinner1" -->
+        <!-- android:layout_width="125dp" -->
+        <!-- android:layout_height="125dp" -->
+        <!-- android:background="@android:drawable/btn_dropdown" -->
+        <!-- android:onClick="onItemSelected" /> -->
+
+<!--             android:spinnerMode="dropdown" /> -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio_ui_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="English"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_ui_kor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Korean"
+                android:onClick="onRadioButtonClicked" />
+
+<!--             <RadioButton -->
+<!--                 android:id="@+id/radio2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="RadioButton" /> -->
+        </RadioGroup>
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:text="Select Phrase Language" />
+
+        <!-- <Spinner -->
+        <!-- android:id="@+id/spinner1" -->
+        <!-- android:layout_width="125dp" -->
+        <!-- android:layout_height="125dp" -->
+        <!-- android:background="@android:drawable/btn_dropdown" -->
+        <!-- android:onClick="onItemSelected" /> -->
+
+<!--             android:spinnerMode="dropdown" /> -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio_phrase_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="English"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_phrase_kor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Korean"
+                android:onClick="onRadioButtonClicked" />
+
+<!--             <RadioButton -->
+<!--                 android:id="@+id/radio2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="RadioButton" /> -->
+        </RadioGroup>
+
+    </LinearLayout>
+    
+    
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+            android:onClick="transitionMainMenu"
+            android:text="@string/back_menu_kor" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+ 	        android:onClick="transitionMainMenu"
+            android:text="@string/main_menu_kor" />
+    
+
+    
+
+</LinearLayout>

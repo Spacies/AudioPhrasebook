@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.audiophrasebook.OptionsMenuActivity" >
 
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
             android:id="@+id/textview1"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:text="Select Phrase Language" />
+            android:text="Select Interface Language" />
 
         <!-- <Spinner -->
         <!-- android:id="@+id/spinner1" -->
@@ -37,19 +38,69 @@
             android:layout_height="wrap_content" >
 
             <RadioButton
-                android:id="@+id/radio0"
+                android:id="@+id/radio_ui_eng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="English"
-                android:onClick="setEnglish" />
+                android:onClick="onRadioButtonClicked" />
 
             <RadioButton
-                android:id="@+id/radio1"
+                android:id="@+id/radio_ui_kor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Korean"
-                android:onClick="setKorean" />
+                android:onClick="onRadioButtonClicked" />
+
+<!--             <RadioButton -->
+<!--                 android:id="@+id/radio2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="RadioButton" /> -->
+        </RadioGroup>
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:text="Select Phrase Language" />
+
+        <!-- <Spinner -->
+        <!-- android:id="@+id/spinner1" -->
+        <!-- android:layout_width="125dp" -->
+        <!-- android:layout_height="125dp" -->
+        <!-- android:background="@android:drawable/btn_dropdown" -->
+        <!-- android:onClick="onItemSelected" /> -->
+
+<!--             android:spinnerMode="dropdown" /> -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio_phrase_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="English"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_phrase_kor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Korean"
+                android:onClick="onRadioButtonClicked" />
 
 <!--             <RadioButton -->
 <!--                 android:id="@+id/radio2" -->
@@ -66,15 +117,15 @@
             android:id="@+id/button1"
             android:layout_width="match_parent" 
     	android:layout_height="wrap_content"
-            android:onClick="goBack"
-            android:text="@string/back_menu" />
+            android:onClick="transitionMainMenu"
+            android:text="@string/back_menu_eng" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent" 
     		android:layout_height="wrap_content"
  	        android:onClick="transitionMainMenu"
-            android:text="@string/mainmenu_menu" />
+            android:text="@string/main_menu_eng" />
     
 
     

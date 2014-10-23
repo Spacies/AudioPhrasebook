@@ -15,19 +15,19 @@
     <Button android:id="@+id/button1" 
     	android:layout_width="match_parent" 
     	android:layout_height="wrap_content" 
-    	android:text="@string/main_start" 
+    	android:text="@string/main_start_eng" 
     	android:onClick="transitionCategoryMenu"/>
     	
     <Button android:id="@+id/button2" 
     	android:layout_width="match_parent" 
     	android:layout_height="wrap_content" 
-    	android:text="@string/main_options"
+    	android:text="@string/main_options_eng"
     	android:onClick="transitionOptionsMenu"/>
     	
     <Button android:id="@+id/button3" 
     	android:layout_width="match_parent" 
     	android:layout_height="wrap_content" 
-    	android:text="@string/main_exit"
+    	android:text="@string/main_exit_eng"
     	android:onClick="transitionExitApplication"/>
 
 </LinearLayout>

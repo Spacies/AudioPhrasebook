@@ -20,7 +20,18 @@ public class GreetingPhrasesActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_greeting_phrases);
+		switch (Globals.UI)
+		{
+		case ENGLISH:
+			setContentView(R.layout.activity_greeting_phrases_eng);
+			break;
+		case KOREAN:
+			setContentView(R.layout.activity_greeting_phrases_kor);
+			break;
+		default:
+			break;
+		}
+		
 	}
 
 	@Override

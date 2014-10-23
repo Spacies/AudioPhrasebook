@@ -1,5 +1,7 @@
 package com.example.audiophrasebook;
 
+import com.example.audiophrasebook.extras.Globals;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +16,18 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		
+		switch (Globals.UI)
+		{
+		case ENGLISH:
+			setContentView(R.layout.activity_main_eng);
+			break;
+		case KOREAN:
+			setContentView(R.layout.activity_main_kor);
+			break;
+		default:
+			break;
+		}
 	}
 
 	@Override

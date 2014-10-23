@@ -20,7 +20,17 @@ public class DiningoutPhrasesActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_diningout_phrases);
+		switch (Globals.UI)
+		{
+		case ENGLISH:
+			setContentView(R.layout.activity_diningout_phrases_eng);
+			break;
+		case KOREAN:
+			setContentView(R.layout.activity_diningout_phrases_kor);
+			break;
+		default:
+			break;
+		}
 	}
 
 	@Override

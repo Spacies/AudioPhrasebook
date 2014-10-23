@@ -1,5 +1,7 @@
 package com.example.audiophrasebook;
 
+import com.example.audiophrasebook.extras.Globals;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +19,18 @@ public class CategoryMenuActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_category_menu);
+		switch (Globals.UI)
+		{
+		case ENGLISH:
+			setContentView(R.layout.activity_category_menu_eng);
+			break;
+		case KOREAN:
+			setContentView(R.layout.activity_category_menu_kor);
+			break;
+		default:
+			break;
+		}
+		
 	}
 
 	@Override
@@ -60,6 +73,17 @@ public class CategoryMenuActivity extends Activity {
 	public void transitionShopping(View v)
 	{
 		Intent intent = new Intent(this, ShoppingPhrasesActivity.class);
+		startActivity(intent);
+	}
+	
+	/**
+	 * Starts new main activity and pops all other activities from the stack.
+	 * 
+	 * @param v
+	 */
+	public void transitionMainMenu(View v) {
+		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);
 	}
 }

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.audiophrasebook.ShoppingPhrasesActivity" >
+    tools:context="com.example.audiophrasebook.DirectionPhrasesActivity" >
 
     <Button
         android:id="@+id/button1"
@@ -17,7 +17,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="playPhrase"
         android:tag="1"
-        android:text="@string/shopping_phrase_one" />
+        android:text="@string/direction_phrase_one_eng" />
 
     <Button
         android:id="@+id/button2"
@@ -26,7 +26,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="playPhrase"
         android:tag="2"
-        android:text="@string/shopping_phrase_two" />
+        android:text="@string/direction_phrase_two_eng" />
 
     <Button
         android:id="@+id/button3"
@@ -35,7 +35,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="playPhrase"
         android:tag="3"
-        android:text="@string/shopping_phrase_three" />
+        android:text="@string/direction_phrase_three_eng" />
 
     <Button
         android:id="@+id/button4"
@@ -44,7 +44,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="playPhrase"
         android:tag="4"
-        android:text="@string/shopping_phrase_four" />
+        android:text="@string/direction_phrase_four_eng" />
 
     <Button
         android:id="@+id/button5"
@@ -53,7 +53,7 @@
         android:layout_gravity="center_horizontal"
         android:onClick="playPhrase"
         android:tag="5"
-        android:text="@string/shopping_phrase_five" />
+        android:text="@string/direction_phrase_five_eng" />
 
     <Button
         android:id="@+id/button6"
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="goBack"
-        android:text="@string/back_menu" />
+        android:text="@string/back_menu_eng" />
 
     <Button
         android:id="@+id/button7"
@@ -69,6 +69,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="transitionMainMenu"
-        android:text="@string/mainmenu_menu" />
-
-</LinearLayout>
+        android:text="@string/main_menu_eng" />
+</LinearLayout>
