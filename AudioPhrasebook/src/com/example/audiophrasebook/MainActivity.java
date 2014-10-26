@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 		default:
 			break;
 		}
-		gps.showSettingsAlert();
+		
 		theLatitude = gps.getLatitude(); //ready for comparison to determine language
 		theLongitude = gps.getLongitude();
 	}
