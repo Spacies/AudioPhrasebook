@@ -2,6 +2,7 @@ package com.example.audiophrasebook;
 
 import com.example.audiophrasebook.extras.GPSValue;
 import com.example.audiophrasebook.extras.Globals;
+import com.example.audiophrasebook.extras.Language;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,6 +24,17 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		gps = new GPSValue(this);
+		theLatitude = gps.getLatitude(); 
+		theLongitude = gps.getLongitude();
+		// Set the phrase language based on GPS location
+		if(theLongitude > 150 && Globals.AUTO_LANGUAGE==true){
+			Globals.PHRASE = Language.ENGLISH;
+		}
+		else if (Globals.AUTO_LANGUAGE==true){
+			Globals.PHRASE = Language.KOREAN;
+		}
+		
 		// Set the UI language
 		switch (Globals.UI)
 		{
@@ -35,11 +47,7 @@ public class MainActivity extends Activity {
 		default:
 			break;
 		}
-		
-		gps = new GPSValue(this);
-		theLatitude = gps.getLatitude(); 
-		theLongitude = gps.getLongitude();
-//		System.out.println("Lat: " + theLatitude + " Long: " + theLongitude + " Location: " + gps.getLocation());
+
 		
 	}
 

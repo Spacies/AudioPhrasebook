@@ -89,6 +89,7 @@ public class OptionsMenuActivity extends Activity {
 		{
 			radioGroupUI.check(findViewById(R.id.radio_ui_kor).getId());
 		}
+		
 		RadioGroup radioGroupPhrase = (RadioGroup) findViewById(R.id.radioGroup2);
 		radioGroupPhrase.clearCheck();
 		if(Globals.PHRASE == Language.ENGLISH)
@@ -98,6 +99,17 @@ public class OptionsMenuActivity extends Activity {
 		else if(Globals.PHRASE == Language.KOREAN)
 		{
 			radioGroupPhrase.check(findViewById(R.id.radio_phrase_kor).getId());
+		}
+		
+		RadioGroup radioGroupGPS = (RadioGroup) findViewById(R.id.radioGroup3);
+		radioGroupGPS.clearCheck();
+		if(Globals.AUTO_LANGUAGE == true)
+		{
+			radioGroupPhrase.check(findViewById(R.id.radio_gps_on).getId());
+		}
+		else if(Globals.AUTO_LANGUAGE == false)
+		{
+			radioGroupPhrase.check(findViewById(R.id.radio_gps_off).getId());
 		}
 	}
 	
@@ -127,7 +139,6 @@ public class OptionsMenuActivity extends Activity {
 	            	System.out.println("UI Korean");
 	        		Globals.UI = Language.KOREAN;
 	        		setContentView(R.layout.activity_options_menu_kor);
-//	        		((RadioButton) v).setChecked(true);;
 	        		setRadioButtons();
 	            }
 	            break;
@@ -136,6 +147,7 @@ public class OptionsMenuActivity extends Activity {
 	            {
 	            	System.out.println("Phrase English");
 	            	Globals.PHRASE = Language.ENGLISH;
+	            	setRadioButtons();
 	            }
 	            break;
 	        case R.id.radio_phrase_kor:
@@ -143,7 +155,24 @@ public class OptionsMenuActivity extends Activity {
 	            {
 	            	System.out.println("Phrase Korean");
 	        		Globals.PHRASE = Language.KOREAN;
-//	        		((RadioButton) v).setChecked(true);;
+	        		setRadioButtons();
+
+	            }
+	            break;
+	        case R.id.radio_gps_on:
+	            if (checked)
+	            {
+	            	System.out.println("GPS on");
+	            	Globals.AUTO_LANGUAGE = true;
+	            	setRadioButtons();
+	            }
+	            break;
+	        case R.id.radio_gps_off:
+	            if (checked)
+	            {
+	            	System.out.println("GPS off");
+	        		Globals.AUTO_LANGUAGE = false;
+	        		setRadioButtons();
 	            }
 	            break;
 	    }

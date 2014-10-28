@@ -1093,7 +1093,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
-        public static final int action_settings=0x7f06004e;
+        public static final int action_settings=0x7f060052;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
         public static final int beginning=0x7f060011;
@@ -1132,6 +1132,9 @@ containing a value of this type.
         public static final int radio=0x7f06002f;
         public static final int radioGroup1=0x7f060047;
         public static final int radioGroup2=0x7f06004b;
+        public static final int radioGroup3=0x7f06004f;
+        public static final int radio_gps_off=0x7f060051;
+        public static final int radio_gps_on=0x7f060050;
         public static final int radio_phrase_eng=0x7f06004c;
         public static final int radio_phrase_kor=0x7f06004d;
         public static final int radio_ui_eng=0x7f060048;
@@ -1155,6 +1158,7 @@ containing a value of this type.
         public static final int tabMode=0x7f060002;
         public static final int textview1=0x7f060046;
         public static final int textview2=0x7f06004a;
+        public static final int textview3=0x7f06004e;
         public static final int title=0x7f06002b;
         public static final int top_action_bar=0x7f060020;
         public static final int up=0x7f060021;
