@@ -20,6 +20,8 @@ public class DiningoutPhrasesActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		// Set the UI language.
 		switch (Globals.UI)
 		{
 		case ENGLISH:
@@ -52,6 +54,10 @@ public class DiningoutPhrasesActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	/**
+	 * Plays the selected phrase in the selected language.
+	 * @param v
+	 */
 	public void playPhrase(View v) {
 		MediaPlayer mp;
 		String buttonNum = (String) v.getTag();

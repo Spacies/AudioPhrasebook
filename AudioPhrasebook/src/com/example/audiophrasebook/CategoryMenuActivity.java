@@ -11,14 +11,11 @@ import android.view.View;
 
 public class CategoryMenuActivity extends Activity {
 	
-	public void goBack(View v)
-	{
-		this.finish();
-	}
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		// Set the UI language.
 		switch (Globals.UI)
 		{
 		case ENGLISH:
@@ -52,24 +49,40 @@ public class CategoryMenuActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	/**
+	 * Transitions to dining out activity.
+	 * @param v
+	 */
 	public void transitionDiningout(View v)
 	{
 		Intent intent = new Intent(this, DiningoutPhrasesActivity.class);
 		startActivity(intent);
 	}
 	
+	/**
+	 * Transitions to direction activity.
+	 * @param v
+	 */
 	public void transitionDirection(View v)
 	{
 		Intent intent = new Intent(this, DirectionPhrasesActivity.class);
 		startActivity(intent);
 	}
 	
+	/**
+	 * Transitions to greeting activity.
+	 * @param v
+	 */
 	public void transitionGreeting(View v)
 	{
 		Intent intent = new Intent(this, GreetingPhrasesActivity.class);
 		startActivity(intent);
 	}
 	
+	/**
+	 * Transitions to shopping activity.
+	 * @param v
+	 */
 	public void transitionShopping(View v)
 	{
 		Intent intent = new Intent(this, ShoppingPhrasesActivity.class);
@@ -85,5 +98,14 @@ public class CategoryMenuActivity extends Activity {
 		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);
+	}
+	
+	/**
+	 * Pops this activity and goes back to the last one.
+	 * @param v
+	 */
+	public void goBack(View v)
+	{
+		this.finish();
 	}
 }

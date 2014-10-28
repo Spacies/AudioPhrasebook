@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		// Set the UI language
 		switch (Globals.UI)
 		{
 		case ENGLISH:
@@ -38,7 +39,7 @@ public class MainActivity extends Activity {
 		gps = new GPSValue(this);
 		theLatitude = gps.getLatitude(); 
 		theLongitude = gps.getLongitude();
-		System.out.println("Lat: " + theLatitude + " Long: " + theLongitude + " Location: " + gps.getLocation());
+//		System.out.println("Lat: " + theLatitude + " Long: " + theLongitude + " Location: " + gps.getLocation());
 		
 	}
 
@@ -61,50 +62,36 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	/**
+	 * Go to category menu after button click.
+	 * @param v
+	 */
 	public void transitionCategoryMenu(View v)
 	{
 		Intent intent = new Intent(this, CategoryMenuActivity.class);
 		startActivity(intent);
 	}
 	
+	/**
+	 * Exit the application.
+	 * @param arg0
+	 */
 	public void transitionExitApplication(View arg0)
 	{
 		android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
 	}
 	
+	/**
+	 * Go to options menu after button click.
+	 * @param v
+	 */
 	public void transitionOptionsMenu(View v)
 	{
 		Intent intent = new Intent(this, OptionsMenuActivity.class);
 		startActivity(intent);
 	}
 	
-//	public void getLocation(View v)
-//	{
-//		gps.getLocation();
-////		getLatestLocation(this);
-//		System.out.println("GPS LOCATION : " +gps.getLatitude() + " "+ gps.getLongitude());
-//	}
-	
-//	public static Location getLatestLocation(final Context context) {
-//	    LocationManager manager = (LocationManager) context
-//	        .getSystemService(LOCATION_SERVICE);
-//	    Criteria criteria = new Criteria();
-//	    criteria.setAccuracy(1);
-//	    String provider = manager.getBestProvider(criteria, true);
-//	    Location bestLocation;
-//	    if (provider != null)
-//	      bestLocation = manager.getLastKnownLocation(provider);
-//	    else 
-//	      bestLocation = null;
-////	    Location latestLocation = getLatest(bestLocation,
-////	        manager.getLastKnownLocation());
-////	    latestLocation = getLatest(latestLocation,
-////	        manager.getLastKnownLocation(NETWORK_PROVIDER));
-////	    latestLocation = getLatest(latestLocation,
-////	        manager.getLastKnownLocation(PASSIVE_PROVIDER));
-//	    return bestLocation;
-//	  } 
 }
 
 
