@@ -142,6 +142,7 @@ public class OptionsMenuActivity extends Activity {
 	            {
 	            	System.out.println("UI English");
 	            	Globals.UI = Language.ENGLISH;
+	            	setContentView(R.layout.activity_options_menu_eng);
 	            	//((RadioButton) v).setVisibility(View.VISIBLE);
 	            }
 	            break;
@@ -150,6 +151,7 @@ public class OptionsMenuActivity extends Activity {
 	            {
 	            	System.out.println("UI Korean");
 	        		Globals.UI = Language.KOREAN;
+	        		setContentView(R.layout.activity_options_menu_kor);
 	        		((RadioButton) v).setChecked(true);;
 	            }
 	            break;
