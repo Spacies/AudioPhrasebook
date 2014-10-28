@@ -31,8 +31,10 @@ public class MainActivity extends Activity {
 			break;
 		}
 		
-		theLatitude = gps.getLatitude(); //ready for comparison to determine language
+		gps = new GPSValue(this);
+		theLatitude = gps.getLatitude(); 
 		theLongitude = gps.getLongitude();
+		
 	}
 
 	@Override
