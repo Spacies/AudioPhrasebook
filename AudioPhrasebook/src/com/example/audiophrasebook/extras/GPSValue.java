@@ -37,7 +37,9 @@ public class GPSValue extends Service implements LocationListener {
     public Location getLocation() {
         try {
             locationManager = (LocationManager) theContext
-                    .getSystemService(LOCATION_SERVICE); 
+                    .getSystemService(Context.LOCATION_SERVICE); 
+            
+            System.out.println("Location Manager: " + locationManager.toString());
             
             isGPSEnabled = locationManager
                     .isProviderEnabled(LocationManager.GPS_PROVIDER); 
@@ -51,6 +53,7 @@ public class GPSValue extends Service implements LocationListener {
                 this.canGetLocation = true;
                 
                 if (isNetworkEnabled) {
+                	System.out.println("GOT HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     locationManager.requestLocationUpdates(
                             LocationManager.NETWORK_PROVIDER,
                             MIN_TIME_BW_UPDATES,
@@ -73,9 +76,11 @@ public class GPSValue extends Service implements LocationListener {
                                 MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
                         Log.d("GPS Enabled", "GPS Enabled");
                         if (locationManager != null) {
+                        	
                             location = locationManager
                                     .getLastKnownLocation(LocationManager.GPS_PROVIDER);
                             if (location != null) {
+                            	
                                 latitude = location.getLatitude();
                                 longitude = location.getLongitude();
                             }
