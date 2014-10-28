@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class OptionsMenuActivity extends Activity {
 
@@ -45,6 +46,27 @@ public class OptionsMenuActivity extends Activity {
 			break;
 		default:
 			break;
+		}
+		
+		RadioGroup radioGroupUI = (RadioGroup) findViewById(R.id.radioGroup1);
+		radioGroupUI.clearCheck();
+		if(Globals.UI == Language.ENGLISH)
+		{
+			radioGroupUI.check(findViewById(R.id.radio_ui_eng).getId());
+		}
+		else if(Globals.UI == Language.KOREAN)
+		{
+			radioGroupUI.check(findViewById(R.id.radio_ui_kor).getId());
+		}
+		RadioGroup radioGroupPhrase = (RadioGroup) findViewById(R.id.radioGroup2);
+		radioGroupPhrase.clearCheck();
+		if(Globals.PHRASE == Language.ENGLISH)
+		{
+			radioGroupPhrase.check(findViewById(R.id.radio_phrase_eng).getId());
+		}
+		else if(Globals.PHRASE == Language.KOREAN)
+		{
+			radioGroupPhrase.check(findViewById(R.id.radio_phrase_kor).getId());
 		}
 		
 		

@@ -11,8 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends Activity {
-//	public PhraseLanguage language = PhraseLanguage.ENGLISH;
-//	private Globals globals;
 	GPSValue gps;
 	double theLatitude;
 	double theLongitude;
