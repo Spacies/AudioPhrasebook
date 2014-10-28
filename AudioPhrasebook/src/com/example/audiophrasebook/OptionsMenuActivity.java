@@ -48,27 +48,28 @@ public class OptionsMenuActivity extends Activity {
 			break;
 		}
 		
-		RadioGroup radioGroupUI = (RadioGroup) findViewById(R.id.radioGroup1);
-		radioGroupUI.clearCheck();
-		if(Globals.UI == Language.ENGLISH)
-		{
-			radioGroupUI.check(findViewById(R.id.radio_ui_eng).getId());
-		}
-		else if(Globals.UI == Language.KOREAN)
-		{
-			radioGroupUI.check(findViewById(R.id.radio_ui_kor).getId());
-		}
-		RadioGroup radioGroupPhrase = (RadioGroup) findViewById(R.id.radioGroup2);
-		radioGroupPhrase.clearCheck();
-		if(Globals.PHRASE == Language.ENGLISH)
-		{
-			radioGroupPhrase.check(findViewById(R.id.radio_phrase_eng).getId());
-		}
-		else if(Globals.PHRASE == Language.KOREAN)
-		{
-			radioGroupPhrase.check(findViewById(R.id.radio_phrase_kor).getId());
-		}
+//		RadioGroup radioGroupUI = (RadioGroup) findViewById(R.id.radioGroup1);
+//		radioGroupUI.clearCheck();
+//		if(Globals.UI == Language.ENGLISH)
+//		{
+//			radioGroupUI.check(findViewById(R.id.radio_ui_eng).getId());
+//		}
+//		else if(Globals.UI == Language.KOREAN)
+//		{
+//			radioGroupUI.check(findViewById(R.id.radio_ui_kor).getId());
+//		}
+//		RadioGroup radioGroupPhrase = (RadioGroup) findViewById(R.id.radioGroup2);
+//		radioGroupPhrase.clearCheck();
+//		if(Globals.PHRASE == Language.ENGLISH)
+//		{
+//			radioGroupPhrase.check(findViewById(R.id.radio_phrase_eng).getId());
+//		}
+//		else if(Globals.PHRASE == Language.KOREAN)
+//		{
+//			radioGroupPhrase.check(findViewById(R.id.radio_phrase_kor).getId());
+//		}
 		
+		setRadioButtons();
 		
 		
 //		spinner = (Spinner)findViewById(R.id.spinner1);
@@ -115,20 +116,29 @@ public class OptionsMenuActivity extends Activity {
 		startActivity(intent);
 	}
 	
-//	public void setPhraseLanguage(View v)
-//	{
-//		System.out.println("HELLO");
-//	}
-//	
-//	public void setEnglish(View v) {
-//		System.out.println("English");
-//		Globals.PHRASE = Language.ENGLISH;
-//    }
-//	public void setKorean(View v)
-//	{
-//		System.out.println("Korean");
-//		Globals.PHRASE = Language.KOREAN;
-//	}
+	private void setRadioButtons()
+	{
+		RadioGroup radioGroupUI = (RadioGroup) findViewById(R.id.radioGroup1);
+		radioGroupUI.clearCheck();
+		if(Globals.UI == Language.ENGLISH)
+		{
+			radioGroupUI.check(findViewById(R.id.radio_ui_eng).getId());
+		}
+		else if(Globals.UI == Language.KOREAN)
+		{
+			radioGroupUI.check(findViewById(R.id.radio_ui_kor).getId());
+		}
+		RadioGroup radioGroupPhrase = (RadioGroup) findViewById(R.id.radioGroup2);
+		radioGroupPhrase.clearCheck();
+		if(Globals.PHRASE == Language.ENGLISH)
+		{
+			radioGroupPhrase.check(findViewById(R.id.radio_phrase_eng).getId());
+		}
+		else if(Globals.PHRASE == Language.KOREAN)
+		{
+			radioGroupPhrase.check(findViewById(R.id.radio_phrase_kor).getId());
+		}
+	}
 	
 	public void onRadioButtonClicked(View v)
 	{
@@ -144,6 +154,7 @@ public class OptionsMenuActivity extends Activity {
 	            	Globals.UI = Language.ENGLISH;
 	            	setContentView(R.layout.activity_options_menu_eng);
 	            	//((RadioButton) v).setVisibility(View.VISIBLE);
+	            	setRadioButtons();	            	
 	            }
 	            break;
 	        case R.id.radio_ui_kor:
@@ -153,6 +164,7 @@ public class OptionsMenuActivity extends Activity {
 	        		Globals.UI = Language.KOREAN;
 	        		setContentView(R.layout.activity_options_menu_kor);
 	        		((RadioButton) v).setChecked(true);;
+	        		setRadioButtons();
 	            }
 	            break;
 	    	case R.id.radio_phrase_eng:
