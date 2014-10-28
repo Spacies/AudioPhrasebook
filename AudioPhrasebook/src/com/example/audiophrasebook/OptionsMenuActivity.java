@@ -105,11 +105,11 @@ public class OptionsMenuActivity extends Activity {
 		radioGroupGPS.clearCheck();
 		if(Globals.AUTO_LANGUAGE == true)
 		{
-			radioGroupPhrase.check(findViewById(R.id.radio_gps_on).getId());
+			radioGroupGPS.check(findViewById(R.id.radio_gps_on).getId());
 		}
 		else if(Globals.AUTO_LANGUAGE == false)
 		{
-			radioGroupPhrase.check(findViewById(R.id.radio_gps_off).getId());
+			radioGroupGPS.check(findViewById(R.id.radio_gps_off).getId());
 		}
 	}
 	
